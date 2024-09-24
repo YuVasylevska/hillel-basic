@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS</title>
-    <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-    <!-- <link rel="stylesheet" href="css/myreset.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <div class="container">
-      <div class="form-header">
-        <a href="#" class="login">Login</a>
-        <a href="#" class="register">Register</a>
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Inline block</title>
+   <!-- <link rel="stylesheet" href="css/myreset.css"> -->
+   <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+   <header class="header">
+      <div class="container line">
+         <div class="logo">
+            <img src="img/logo.png" alt="GreenShop">
+         </div>
+         <nav class="nav">
+            <ul>
+               <li class="active"><a href="#">Home</a></li>
+               <li><a href="#">Shop</a></li>
+               <li><a href="#">Plant Care</a></li>
+               <li><a href="#">Blog</a></li>
+            </ul>
+         </nav>
+         <button class="login-btn" onclick="window.open('register.html', '_blank');">
+            <img class="img-btn" src="img/logout.png" alt="Login">
+            Login
+         </button>
       </div>
-      <h2>Enter your email and password to register.</h2>
-      <form class="register-form">
-        <input type="text" name="username" placeholder="Username" required>
-        <input type="email" name="email" placeholder="Enter your email address" required>
-        <input type="password" name="password" placeholder="Password" required>
-        <input type="password" name="password" placeholder="Confirm Password" required>
-        <input class="reg" type="submit" value="Register">
-      </form>
-      <p>Or register with</p>
-      <div class="social">
-        <button class="google">
-          <img src="img/google.png" alt="Google">
-          Continue with Google
-        </button>
-        <button class="facebook">
-          <img src="img/facebook.png" alt="Facebook">
-          Continue with Facebook
-        </button>
+   </header>
+   <main class="main">
+      <div class="container container-bg">
+         <div class="main-content">
+            <p class="welcome">WELCOME TO GREENSHOP</p>
+            <h1>LET'S MAKE A BETTER <span class="planet">PLANET</span> </h1>
+            <p class="shop-offering">We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</p>
+            <button class="shop-btn">SHOP NOW</button>
+         </div>
+         <div class="main-image">
+            <img src="img/plants.png" alt="Plants">
+         </div>
       </div>
-      <div class="rectangle"></div>
-    </div>
-  </body>
+   </main>
+</body>
 </html>
