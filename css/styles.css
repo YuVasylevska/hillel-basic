@@ -1,0 +1,38 @@
+@font-face {
+   font-family: "Cera-pro-reg";
+   src: url("../fonts/CeraPro-Regular.ttf");
+}
+@font-face {
+   font-family: "Cera-pro-bold";
+   src: url("../fonts/CeraPro-Bold.ttf");
+}
+@font-face {
+   font-family: "Cera-pro-med";
+   src: url("../fonts/CeraPro-Medium.ttf");
+}
+@font-face {
+   font-family: "Cera-pro-black";
+   src: url("../fonts/CeraPro-Black.ttf");
+}
+/* myreset */
+*{
+   padding: 0; margin: 0; box-sizing: border-box;
+}
+/* root, var */
+:root {
+   font-size: 16px;
+   --color-bg-primary:#46A358;
+   --color-text-primary:#3D3D3D;
+   --color-white: #ffffff;
+}
+/* general styles */
+html {
+   font-family: "Cera-pro-reg";
+}
+
+/* css */
+.container {
+   width: 90%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
