@@ -32,7 +32,21 @@ html {
 
 /* css */
 .container {
-   width: 90%;
-   max-width: 1200px;
+   max-width: 83.333%;
    margin: 0 auto;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header .logo {
+   width: 150px;
+}
+
+.header-items button {
+   border: none;
+   background-color: transparent;
 }
