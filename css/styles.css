@@ -40,7 +40,7 @@ img {
    width: 100%;
 }
 
-/* header */
+/* ----- header ----- */
 header {
    display: flex;
    justify-content: space-between;
@@ -92,7 +92,7 @@ header nav a.active, header nav a:hover {
    font-weight: 700;
 }
 
-/* hero */
+/* ----- hero ----- */
 .hero {
    display: flex;
    justify-content: space-between;
@@ -129,6 +129,8 @@ header nav a.active, header nav a:hover {
 
 hero-image {
    width: 40%;
+   display: flex;
+   justify-content: space-between;
 }
 
 .hero-text p {
@@ -152,8 +154,10 @@ button.shop-now-btn {
    cursor: pointer;
 }
 
-/* categories */
+/* ----- product ----- */
 
+
+/* ----- categories ----- */
 .categories {
    display: flex;
    justify-content: space-between;
@@ -194,13 +198,21 @@ button.shop-now-btn {
    max-width: 160px;
    margin-left: auto;
    margin-bottom: 16px;
+   font-family: "Cera-pro-black";
+   font-weight: 900;
+   font-size: 18px;
+   line-height: 24px;
+   color: var(--color-text-primary);
+   text-transform: uppercase;
 }
 
 .item-info p {
-   font-size: 13px;
+   font-size: 14px;
+   line-height: 24px;
    max-width: 300px;
    margin-bottom: 14px;
    margin-left: auto;
+   color: #727272;
 }
 
 .item-info button {
@@ -213,6 +225,10 @@ button.shop-now-btn {
    border-radius: 6px;
    margin-left: auto;
    cursor: pointer;
+   font-family: "Cera-pro-med";
+   line-height: 20px;
+   font-weight: 500;
+   font-size: 14px;
 }
 
 .item-info button img {
