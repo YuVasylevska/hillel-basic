@@ -169,6 +169,7 @@ button.shop-now-btn {
    border-radius: 6px;
    cursor: pointer;
 }
+
 /* ----- product ----- */
 .products {
    display: flex;
@@ -188,7 +189,6 @@ button.shop-now-btn {
 .aside-items nav {
    display: flex;
    flex-direction: column;
-   margin-bottom: 270px;
 }
 
 .aside-items nav h3 {
