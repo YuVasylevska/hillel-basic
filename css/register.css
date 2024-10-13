@@ -1,0 +1,96 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   color: #3D3D3D;
+   background-color: #FFFFFF;
+}
+
+.container {
+   margin: auto;
+   width: 500px;
+   text-align: center;
+}
+
+.form-header {
+   margin: 50px;
+}
+
+a {
+   text-decoration: none;
+   font-size: 20px;
+   font-weight: 500;
+   line-height: 16px;
+   color: #3D3D3D;
+}
+
+.register {
+   color: #46A358;
+   padding-left: 20px;
+}
+
+h2 {
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 16px;
+   margin-bottom: 20px;
+}
+
+form {
+   margin-bottom: 20px;
+}
+
+form input {
+   width: 300px;
+   padding: 10px;
+   margin-bottom: 10px;
+   border-radius: 5px;
+   border: solid 1px #EAEAEA;
+}
+
+.reg {
+   width: 300px;
+   padding: 16px;
+   background-color: #46A358;
+   color: #FFFFFF;
+   border: none;
+   border-radius: 5px;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 16px;
+   cursor: pointer;
+}
+
+.social-login {
+   margin-top: 10px;
+}
+
+p{
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 16px;
+   margin: 20px;
+}
+
+.social button {
+   width: 300px;
+   padding: 10px;
+   margin-bottom: 10px;
+   border: solid 1px #EAEAEA;
+   border-radius: 5px;
+   background-color: #FFFFFF;
+}
+
+img{
+   padding-right: 5px;
+}
+
+.rectangle{
+   width: 500px;
+   height: 10px;
+   background-color: #46A358;
+   margin-top: 20px;
+}
