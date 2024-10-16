@@ -670,7 +670,7 @@ footer {
    content: "";
    width: 20px;
    height: 20px;
-   background-image: url(/img/location.svg);
+   background-image: url(../img/location.svg);
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
