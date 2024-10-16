@@ -444,6 +444,7 @@ button.shop-now-btn {
    display: flex;
    justify-content: space-between;
    gap: 28px;
+   margin-bottom: 100px;
 }
 
 .item-img {
@@ -516,4 +517,246 @@ button.shop-now-btn {
 .item-info button img {
    width: 18px;
    margin-left: 12px;
+}
+
+/* ----- footer ----- */
+footer {
+   background-color: #FBFBFB;
+}
+
+.top-section {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+   padding: 20px;
+}
+
+.services {
+   display: flex;
+   justify-content: space-between;
+}
+
+.service {
+   display: flex;
+   flex-direction: column;
+   flex: 204;
+   padding: 0 30px 0 0;
+   margin: 0 30px 0 0;
+   position: relative;
+}
+
+.service:not(:last-child)::after {
+   content: '';
+   position: absolute;
+   right: 0px;
+   top: 10%;
+   height: 90%;
+   width: 1px;
+   background-color: #46A3581A;
+}
+
+.service-icon {
+   width: 80px;
+   height: 90px;
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center;
+   margin: 0 0 15px;
+}
+
+.garden-care { 
+   background-image: url('/img/pre-footer-1.svg'); 
+}
+.plant-renovation { 
+   background-image: url('/img/pre-footer-2.svg'); 
+}
+.watering-garden { 
+   background-image: url('/img/pre-footer-3.svg'); 
+}
+
+.service h3 {
+   font-family: "Cera-pro-bold";
+   color: var(--color-text-primary);
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 16px;
+   padding-bottom: 10px;
+}
+
+.service p {
+   color: #727272;
+   font-size: 14px;
+   line-height: 22px;
+   max-width: 200px;
+}
+
+.newsletter {
+   display: flex;
+   flex-direction: column;
+   /* width: 29%; */
+   flex: 354;
+   /* margin-top: 0 25px 37px 0; */
+}
+
+.newsletter-form {
+   display: flex;
+   margin-bottom: 18px;
+}
+
+.newsletter input[type="email"] {
+   padding: 10px;
+   flex-grow: 1;
+   border: none;
+   background-color: #ffffff;
+}
+
+.newsletter button {
+   padding: 12px 26px;
+   background-color: #46A358;
+   color: #ffffff;
+   border: none;
+   cursor: pointer;
+   white-space: nowrap;
+   border-radius: 4px;
+   font-family: "Cera-pro-bold";
+   font-size: 18px;
+}
+
+.newsletter h3 {
+   font-family: "Cera-pro-bold";
+   color: var(--color-text-primary);
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 16px;
+   padding-bottom: 25px;
+}
+
+.newsletter p {
+   color: #727272;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+.company-info {
+   background: linear-gradient(to right, #EDF6EF, #52C368);
+   color: var(--color-text-primary);
+   padding: 33px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.company-info p {
+   text-align: center;
+   display: inline-flex;
+   align-items: center;
+   gap: 5px;
+   color: #3D3D3D;
+   font-size: 14px;
+   line-height: 22px;
+}
+
+.footer-links {
+   display: flex;
+   justify-content: space-between;
+   margin: 33px 23px ;
+}
+
+.company-info img {
+   width: 150px;
+}
+
+.location::before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background-image: url(/img/location.svg);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.message::before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background-image: url(/img/message.svg);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.phone::before {
+   content: "";
+   width: 20px;
+   height: 20px;
+   background-image: url(/img/calling.svg);
+   background-size: contain;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.footer-section {
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+}
+
+.footer-section h3 {
+   margin-bottom: 10px;
+   color: #3D3D3D;
+   font-weight: 700;
+   font-size: 18px;
+   font-family: "Cera-pro-bold";
+   }
+
+.footer-section ul {
+   list-style-type: none;
+   padding: 0;
+}
+
+.footer-section li {
+   color: #3D3D3D;
+   line-height: 30px;
+}
+
+.social-media {
+   display: flex;
+   gap: 10px;
+}
+
+.social-media a {
+   display: inline-block;
+   width: 20px;
+   height: 20px;
+   border: 1px solid #46A35833;
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 7px;
+   box-sizing: content-box;
+   margin-bottom: 33px;
+}
+
+.social-media a img {
+   width: 14px;
+   height: 14px;
+}
+
+.payment-methods img {
+   width: 224px;
+}
+
+.copy {
+   text-align: center; 
+   margin: 50px 0 22px;
+   border-top: 1px solid #46A35833;
+   background-color: #ffffff;
+}
+
+.copy p {
+   font-size: 14px;
+   color: #3D3D3D;
+   line-height: 30px;
 }
