@@ -680,7 +680,7 @@ footer {
    content: "";
    width: 20px;
    height: 20px;
-   background-image: url(/img/message.svg);
+   background-image: url(../img/message.svg);
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
@@ -690,7 +690,7 @@ footer {
    content: "";
    width: 20px;
    height: 20px;
-   background-image: url(/img/calling.svg);
+   background-image: url(/..img/calling.svg);
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
