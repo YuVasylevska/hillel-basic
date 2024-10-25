@@ -210,11 +210,12 @@ background-color: #367c42;
 
 .social-login {
 text-align: center;
-
 }
 
 .google, .facebook {
-display: block;
+display: flex;
+align-items: center;
+justify-content: center;
 width: 100%;
 padding: 10px;
 margin: 10px 0;
@@ -227,6 +228,10 @@ background-color: var(--color-white);
 font-family: "Cera-pro-med";
 font-weight: 500;
 font-size: 13px;
+}
+
+.google svg, .facebook svg {
+margin-right: 5px;
 }
 
 /* ----- checkbox ----- */
