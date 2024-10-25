@@ -38,22 +38,49 @@
          <a href="#">Blogs</a>
       </nav>
       <div class="header-items">
-         <button>
+         <button class="search">
             <svg class="icon">
                <use href=".//img/sprites.svg#icon-search"></use>
             </svg>
          </button>
-         <button>
+         <button class="bask">
             <svg class="icon">
                <use href=".//img/sprites.svg#icon-basket"></use>
             </svg>
          </button>
-         <button onclick="window.open('register.html', '_blank');">
+   <!------------------------>
+         <button id="openModal">
             <svg width="20" height="20" class="icon">
                <use href=".//img/sprites.svg#icon-login"></use>
             </svg>
             Login
-         </button>
+         </button>        
+         <div id="registerModal" class="modal">
+            <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login | <span>Register</span></h2>
+               <form>
+                  <label>Enter your email and password to register:</label>
+                  <input type="text" name="username" placeholder="Username" required>
+                  <input type="email" name="email" placeholder="Enter your email address" required>
+                  <input type="password" name="password" placeholder="Password" required>
+                  <input type="password" name="password" placeholder="Confirm Password" required>
+                  <div class="checkbox-container">
+                     <label class="checkbox-label">
+                     <input type="checkbox" id="rememberMe">
+                     <span class="custom-checkbox"></span>
+                     Remember me
+                     </label>
+                  </div>
+                  <button class="register-btn">Register</button>
+               </form>
+               <p>Or register with</p>
+               <div class="social-login">
+                  <button class="google">Continue with Google</button>
+                  <button class="facebook">Continue with Facebook</button>
+               </div>
+            </div>
+         </div>
       </div>
    </header>
    <!------------------------>
@@ -535,5 +562,27 @@
          <p>© 2021 GreenShop. All Rights Reserved.</p>
       </div>
    </footer>
+      <!------------------------>
+   <script>
+      // Получаем модальное окно и кнопку открытия
+      var modal = document.getElementById('registerModal');
+      var openModalBtn = document.getElementById('openModal');
+      var closeBtn = document.getElementsByClassName('close')[0];
+      
+      // Убеждаемся, что модальное окно скрыто при загрузке
+      document.addEventListener('DOMContentLoaded', function() {
+         modal.style.display = 'none'; // Модальное окно по умолчанию скрыто
+      });
+      
+      // Открываем модальное окно по клику на кнопку
+      openModalBtn.addEventListener('click', function() {
+         modal.style.display = 'flex'; // Показываем попап
+      });
+      
+      // Закрываем модальное окно по клику на крестик
+      closeBtn.addEventListener('click', function() {
+         modal.style.display = 'none'; // Закрываем попап
+      });
+      </script>
 </body>
 </html>

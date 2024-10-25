@@ -62,19 +62,18 @@ header.container {
    padding-bottom: 13px;
 }
 
-
 .header-items {
    display: flex;
 }
 
-.header-items button {
+.search, .bask {
    background-color: transparent;
-   margin: 0 0 0 30px;
+   margin: 0 30px 0 0;
    border: none;
    cursor: pointer;
 }
 
-.header-items button:last-child {
+#openModal {
    background-color: var(--color-bg-primary);
    padding: 15px 26px;
    display: flex;
@@ -87,9 +86,14 @@ header.container {
    font-family: "Cera-pro-med";
    font-weight: 500;
    line-height: 20px;
+   transition: background-color 0.3s;
 }
 
-.header-items button:last-child svg {
+#openModal:hover {
+background: #367c42;
+}
+
+#openModal svg {
    width: 20px;
    height: 20px;
    fill: var(--color-white);
@@ -108,6 +112,169 @@ header nav a {
 header nav a.active, header nav a:hover {
    border-bottom: 3px solid #46A358;
    font-weight: 700;
+}
+
+/* ----- modal ----- */
+.modal {
+display: none; /* Скрыть попап */
+position: fixed;
+z-index: 1;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.modal-content {
+background-color: var(--color-white);
+padding: 50px 100px;
+width: 500px;
+position: relative;
+border-bottom: 10px solid var(--color-bg-primary);
+}
+
+.close {
+   position: absolute;
+   top: 13px;
+   right: 16px;
+   color: var(--color-bg-primary);
+   font-size: 28px;
+   cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+color: var(--color-text-primary);
+}
+
+.modal-content h2 {
+text-align: center;
+margin-bottom: 20px;
+font-family: "Cera-pro-med";
+color: var(--color-text-primary);
+font-weight: 500;
+font-size: 20px;
+}
+
+.modal-content h2 span {
+   color: var(--color-bg-primary);
+}
+
+.modal-content form label {
+font-size: 13px;
+color: var(--color-text-primary);
+margin-bottom: 10px;
+display: flex;
+}
+
+.modal-content form input {
+display: block;
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border: 1px solid #EAEAEA;
+border-radius: 5px;
+outline: none;
+}
+
+.register-btn {
+background-color: var(--color-bg-primary);
+color: var(--color-white);
+padding: 16px 118px 13px 119px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+font-family: "Cera-pro-bold";
+font-weight: 700;
+font-size: 16px;
+line-height: 16px;
+margin-bottom: 36px;
+transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+background-color: #367c42;
+}
+
+.modal-content p {
+   text-align: center;
+   color: var(--color-text-primary);
+   font-size: 13px;
+   line-height: 16px;
+   margin-bottom: 27px;
+}
+
+.social-login {
+text-align: center;
+
+}
+
+.google, .facebook {
+display: block;
+width: 100%;
+padding: 10px;
+margin: 10px 0;
+border-radius: 5px;
+cursor: pointer;
+outline: none;
+border: 1px solid #EAEAEA;
+color: #727272;
+background-color: var(--color-white);
+font-family: "Cera-pro-med";
+font-weight: 500;
+font-size: 13px;
+}
+
+/* ----- checkbox ----- */
+.checkbox-container {
+margin: 15px 0;
+}
+
+.checkbox-label {
+display: flex;
+align-items: center;
+cursor: pointer;
+user-select: none;
+}
+
+.checkbox-label input[type="checkbox"] {
+display: none;
+}
+
+.custom-checkbox {
+display: inline-block;
+width: 20px;
+height: 20px;
+background-color: #EAEAEA;
+border-radius: 5px;
+margin-right: 10px;
+position: relative;
+transition: background-color 0.3s;
+}
+
+.custom-checkbox::after {
+content: "";
+position: absolute;
+top: 4px;
+left: 4px;
+width: 12px;
+height: 12px;
+background-color: var(--color-white);
+border-radius: 3px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+input[type="checkbox"]:checked + .custom-checkbox {
+background-color: var(--color-bg-primary);
+}
+
+input[type="checkbox"]:checked + .custom-checkbox::after {
+opacity: 1;
 }
 
 /* ----- menu ----- */
@@ -239,6 +406,11 @@ button.shop-now-btn {
    border: none;
    border-radius: 6px;
    cursor: pointer;
+   transition: background-color 0.3s;
+}
+
+button.shop-now-btn:hover {
+background: #367c42;
 }
 
 /* ----- product ----- */
@@ -417,6 +589,7 @@ button.shop-now-btn {
 
 .sort-items select{
    border: none;
+   outline: none;
 }
 
 /* ----- cards ----- */
@@ -594,6 +767,11 @@ button.shop-now-btn {
    border-radius: 6px;
    cursor: pointer;
    gap: 8px;
+   transition: background-color 0.3s;
+}
+
+.item-info button:hover {
+   background: #367c42;
 }
 
 .item-info button svg {
@@ -688,6 +866,11 @@ footer {
    border-radius: 4px;
    font-family: "Cera-pro-bold";
    font-size: 18px;
+   transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+   background: #367c42;
 }
 
 .newsletter h3 {
