@@ -54,7 +54,16 @@
                <use href=".//img/sprites.svg#icon-login"></use>
             </svg>
             Login
-         </button>        
+         </button>
+   <!------------------------>
+         <div id="preloader" class="preloader" style="display: none;">
+            <div class="loader">
+               <div class="dot"></div>
+               <div class="dot"></div>
+               <div class="dot"></div>
+            </div>
+         </div>
+   <!------------------------>
          <div id="registerModal" class="modal">
             <div class="modal-content">
             <span class="close">&times;</span>
@@ -574,24 +583,33 @@
    </footer>
       <!------------------------>
    <script>
-      // Получаем модальное окно и кнопку открытия
+      // элементы
       var modal = document.getElementById('registerModal');
       var openModalBtn = document.getElementById('openModal');
       var closeBtn = document.getElementsByClassName('close')[0];
+      var preloader = document.getElementById('preloader');
       
-      // Убеждаемся, что модальное окно скрыто при загрузке
-      document.addEventListener('DOMContentLoaded', function() {
-         modal.style.display = 'none'; // Модальное окно по умолчанию скрыто
-      });
-      
-      // Открываем модальное окно по клику на кнопку
+      // Открываем модальное окно с прелоадером
       openModalBtn.addEventListener('click', function() {
-         modal.style.display = 'flex'; // Показываем попап
+         // Показываем прелоадер
+         preloader.style.display = 'flex';
+      
+         // Через 1.5 секунды показываем попап и скрываем прелоадер
+         setTimeout(function() {
+            preloader.style.display = 'none'; // Скрыть прелоадер
+            modal.style.display = 'flex'; // Показать попап
+         }, 1500); // Задержка 1.5 секунды
       });
       
-      // Закрываем модальное окно по клику на крестик
+      // Закрываем попап по клику на крестик
       closeBtn.addEventListener('click', function() {
-         modal.style.display = 'none'; // Закрываем попап
+         modal.style.display = 'none'; // Закрыть попап
+      });
+      
+      // Убедимся, что модальное окно скрыто при загрузке страницы
+      document.addEventListener('DOMContentLoaded', function() {
+         modal.style.display = 'none'; // Скрыть попап по умолчанию
+         preloader.style.display = 'none'; // Скрыть прелоадер по умолчанию
       });
       </script>
 </body>
